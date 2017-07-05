@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		416C9C561F0CCC8F0032ED2F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416C9C551F0CCC8F0032ED2F /* AppKit.framework */; };
+		416C9C581F0CCC8F0032ED2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416C9C571F0CCC8F0032ED2F /* Foundation.framework */; };
+		416C9C5C1F0CCC8F0032ED2F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 416C9C5B1F0CCC8F0032ED2F /* Info.plist */; };
+		416C9C5F1F0CCC8F0032ED2F /* ipichack.m in Sources */ = {isa = PBXBuildFile; fileRef = 416C9C5E1F0CCC8F0032ED2F /* ipichack.m */; };
+		416C9C631F0CCC8F0032ED2F /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 416C9C621F0CCC8F0032ED2F /* JRSwizzle.m */; };
+		416C9C651F0CCC8F0032ED2F /* PrefixHeader.pch in Resources */ = {isa = PBXBuildFile; fileRef = 416C9C641F0CCC8F0032ED2F /* PrefixHeader.pch */; };
+		41E5F8EB1F0CE453007CEBF2 /* SKPaymentTransaction+hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5F8EA1F0CE453007CEBF2 /* SKPaymentTransaction+hook.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		416C9C521F0CCC8F0032ED2F /* ipichack.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ipichack.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		416C9C551F0CCC8F0032ED2F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		416C9C571F0CCC8F0032ED2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		416C9C5B1F0CCC8F0032ED2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416C9C5D1F0CCC8F0032ED2F /* ipichack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipichack.h; sourceTree = "<group>"; };
+		416C9C5E1F0CCC8F0032ED2F /* ipichack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ipichack.m; sourceTree = "<group>"; };
+		416C9C611F0CCC8F0032ED2F /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		416C9C621F0CCC8F0032ED2F /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		416C9C641F0CCC8F0032ED2F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		41E5F8E81F0CE25B007CEBF2 /* SKPaymentTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKPaymentTransaction.h; path = ../../../storekit/SKPaymentTransaction.h; sourceTree = "<group>"; };
+		41E5F8E91F0CE3EA007CEBF2 /* SKPaymentTransaction+hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPaymentTransaction+hook.h"; sourceTree = "<group>"; };
+		41E5F8EA1F0CE453007CEBF2 /* SKPaymentTransaction+hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPaymentTransaction+hook.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		416C9C4F1F0CCC8F0032ED2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416C9C561F0CCC8F0032ED2F /* AppKit.framework in Frameworks */,
+				416C9C581F0CCC8F0032ED2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		416C9C491F0CCC8F0032ED2F = {
+			isa = PBXGroup;
+			children = (
+				416C9C591F0CCC8F0032ED2F /* ipichack */,
+				416C9C541F0CCC8F0032ED2F /* Frameworks */,
+				416C9C531F0CCC8F0032ED2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		416C9C531F0CCC8F0032ED2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				416C9C521F0CCC8F0032ED2F /* ipichack.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		416C9C541F0CCC8F0032ED2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				416C9C551F0CCC8F0032ED2F /* AppKit.framework */,
+				416C9C571F0CCC8F0032ED2F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		416C9C591F0CCC8F0032ED2F /* ipichack */ = {
+			isa = PBXGroup;
+			children = (
+				41E5F8E21F0CDF4A007CEBF2 /* HookClasses */,
+				41E5F8E01F0CDEE9007CEBF2 /* Header */,
+				416C9C5D1F0CCC8F0032ED2F /* ipichack.h */,
+				416C9C5E1F0CCC8F0032ED2F /* ipichack.m */,
+				416C9C601F0CCC8F0032ED2F /* JRSwizzle */,
+				416C9C5A1F0CCC8F0032ED2F /* Supporting Files */,
+			);
+			path = ipichack;
+			sourceTree = "<group>";
+		};
+		416C9C5A1F0CCC8F0032ED2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				416C9C5B1F0CCC8F0032ED2F /* Info.plist */,
+				416C9C641F0CCC8F0032ED2F /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		416C9C601F0CCC8F0032ED2F /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				416C9C611F0CCC8F0032ED2F /* JRSwizzle.h */,
+				416C9C621F0CCC8F0032ED2F /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		41E5F8E01F0CDEE9007CEBF2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				41E5F8E81F0CE25B007CEBF2 /* SKPaymentTransaction.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		41E5F8E21F0CDF4A007CEBF2 /* HookClasses */ = {
+			isa = PBXGroup;
+			children = (
+				41E5F8E91F0CE3EA007CEBF2 /* SKPaymentTransaction+hook.h */,
+				41E5F8EA1F0CE453007CEBF2 /* SKPaymentTransaction+hook.m */,
+			);
+			name = HookClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		416C9C511F0CCC8F0032ED2F /* ipichack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416C9C681F0CCC8F0032ED2F /* Build configuration list for PBXNativeTarget "ipichack" */;
+			buildPhases = (
+				416C9C4E1F0CCC8F0032ED2F /* Sources */,
+				416C9C4F1F0CCC8F0032ED2F /* Frameworks */,
+				416C9C501F0CCC8F0032ED2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ipichack;
+			productName = ipichack;
+			productReference = 416C9C521F0CCC8F0032ED2F /* ipichack.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		416C9C4A1F0CCC8F0032ED2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Suclogger;
+				TargetAttributes = {
+					416C9C511F0CCC8F0032ED2F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P6545Y7WH7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 416C9C4D1F0CCC8F0032ED2F /* Build configuration list for PBXProject "ipichack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 416C9C491F0CCC8F0032ED2F;
+			productRefGroup = 416C9C531F0CCC8F0032ED2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				416C9C511F0CCC8F0032ED2F /* ipichack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		416C9C501F0CCC8F0032ED2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416C9C651F0CCC8F0032ED2F /* PrefixHeader.pch in Resources */,
+				416C9C5C1F0CCC8F0032ED2F /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		416C9C4E1F0CCC8F0032ED2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E5F8EB1F0CE453007CEBF2 /* SKPaymentTransaction+hook.m in Sources */,
+				416C9C631F0CCC8F0032ED2F /* JRSwizzle.m in Sources */,
+				416C9C5F1F0CCC8F0032ED2F /* ipichack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		416C9C661F0CCC8F0032ED2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		416C9C671F0CCC8F0032ED2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		416C9C691F0CCC8F0032ED2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = P6545Y7WH7;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ipichack/PrefixHeader.pch;
+				INFOPLIST_FILE = ipichack/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suclogger.ipichack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		416C9C6A1F0CCC8F0032ED2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = P6545Y7WH7;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ipichack/PrefixHeader.pch;
+				INFOPLIST_FILE = ipichack/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suclogger.ipichack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		416C9C4D1F0CCC8F0032ED2F /* Build configuration list for PBXProject "ipichack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416C9C661F0CCC8F0032ED2F /* Debug */,
+				416C9C671F0CCC8F0032ED2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416C9C681F0CCC8F0032ED2F /* Build configuration list for PBXNativeTarget "ipichack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416C9C691F0CCC8F0032ED2F /* Debug */,
+				416C9C6A1F0CCC8F0032ED2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 416C9C4A1F0CCC8F0032ED2F /* Project object */;
+}

@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  ipichack
+//
+//  Created by Suclogger-MAC on 2017/7/5.
+//  Copyright © 2017年 Suclogger. All rights reserved.
+//
+
+#ifndef ipichack_PrefixHeader_pch
+#define ipichack_PrefixHeader_pch
+
+#import <Cocoa/Cocoa.h>
+#import "JRSwizzle.h"
+
+#endif
+
